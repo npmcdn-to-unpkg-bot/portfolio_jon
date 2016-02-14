@@ -1,0 +1,54 @@
+body {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; }
+  body p {
+    text-align: center; }
+  body #myCarousel {
+    height: 100vh; }
+    body #myCarousel div {
+      height: 100vh;
+      max-width: 100%;
+      max-height: 100vh;
+      margin: auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    body #myCarousel #img1 {
+      background-image: url("../../images/1.jpg"); }
+    body #myCarousel #img2 {
+      background-image: url("../../images/DA1.png"); }
+    body #myCarousel #img3 {
+      background-image: url("../../images/DSC_0034_copy.JPG"); }
+    body #myCarousel #img4 {
+      background-image: url("../../images/DSC_0044.jpg"); }
+    body #myCarousel #img5 {
+      background-image: url("../../images/DSC_0044.jpg"); }
+    body #myCarousel #img6 {
+      background-image: url("../../images/DSC_0045.jpg"); }
+    body #myCarousel #img7 {
+      background-image: url("../../images/DSC_0047.jpg"); }
+    body #myCarousel #img8 {
+      background-image: url("../../images/DSC_0082.JPG"); }
+    body #myCarousel #img9 {
+      background-image: url("../../images/DSC_0325.JPG"); }
+    body #myCarousel #img10 {
+      background-image: url("../../images/DSC_0401_copy.JPG"); }
+    body #myCarousel #img11 {
+      background-image: url("../../images/DSC_0434_copy.JPG"); }
+    body #myCarousel #img12 {
+      background-image: url("../../images/DSC_0453_copy.JPG"); }
+    body #myCarousel #img13 {
+      background-image: url("../../images/gala_22.jpg"); }
+    body #myCarousel #img14 {
+      background-image: url("../../images/gala_23.jpg"); }
+    body #myCarousel #img15 {
+      background-image: url("../../images/gala_31.jpg"); }
+    body #myCarousel #img16 {
+      background-image: url("../../images/gala_53.jpg"); }
+    body #myCarousel #img17 {
+      background-image: url("../../images/PAL_12.jpg"); }
+    body #myCarousel #img18 {
+      background-image: url("../../images/PAL_13.jpg"); }
+    body #myCarousel #img19 {
+      background-image: url("../../images/PAL_14.jpg"); }
+
+/*# sourceMappingURL=main.css.map */

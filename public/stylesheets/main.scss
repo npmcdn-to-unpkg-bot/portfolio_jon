@@ -1,0 +1,75 @@
+body {
+	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	p {
+		text-align: center;
+	}
+	#myCarousel {
+		height: 100vh;
+		div {
+			height: 100vh;
+			max-width:100%;
+			max-height:100vh;
+			margin:auto;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		#img1{
+			background-image: url('../../images/1.jpg');
+		}
+		#img2{
+			background-image: url('../../images/DA1.png'); 
+		}
+		#img3{
+			background-image: url('../../images/DSC_0034_copy.JPG'); 
+		}
+		#img4{
+			background-image: url('../../images/DSC_0044.jpg'); 
+		}
+		#img5{
+			background-image: url('../../images/DSC_0044.jpg'); 
+		}
+		#img6{
+			background-image: url('../../images/DSC_0045.jpg'); 
+		}
+		#img7{
+			background-image: url('../../images/DSC_0047.jpg'); 
+		}
+		#img8{
+			background-image: url('../../images/DSC_0082.JPG'); 
+		}
+		#img9{
+			background-image: url('../../images/DSC_0325.JPG'); 
+		}
+		#img10{
+			background-image: url('../../images/DSC_0401_copy.JPG'); 
+		}
+		#img11{
+			background-image: url('../../images/DSC_0434_copy.JPG'); 
+		}
+		#img12{
+			background-image: url('../../images/DSC_0453_copy.JPG'); 
+		}
+		#img13{
+			background-image: url('../../images/gala_22.jpg'); 
+		}
+		#img14{
+			background-image: url('../../images/gala_23.jpg'); 
+		}
+		#img15{
+			background-image: url('../../images/gala_31.jpg'); 
+		}
+		#img16{
+			background-image: url('../../images/gala_53.jpg'); 
+		}
+		#img17{
+			background-image: url('../../images/PAL_12.jpg'); 
+		}
+		#img18{
+			background-image: url('../../images/PAL_13.jpg'); 
+		}
+		#img19{
+			background-image: url('../../images/PAL_14.jpg'); 
+		}
+	}
+}
