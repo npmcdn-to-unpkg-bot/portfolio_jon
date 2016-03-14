@@ -1,74 +1,147 @@
+//sass --watch public/stylesheets/main.scss:public/stylesheets/css/main.css
+@import "include-media";
 body {
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-	p {
-		text-align: center;
+	text-align: center;
+	span {
+		font-family: 'Fascinate Inline', cursive;
 	}
-	#myCarousel {
+	article {
+		height: 100%;
+		width: 30%;
+		min-width:20%;
+		overflow: auto;
+
+		position: absolute;
+		left:15%;
+		right:0;
+		top:0;
+		bottom:0;
+	
+		
+		background: white;
+		opacity: 0.8;
+		border: 2px solid white;
+		p {
+			margin: 1%;
+			padding:1%;
+			font-size: larger;
+		}
+		#about {
+			padding-top: 10%;
+			display: none;
+		}
+		#home{
+			padding-top:50%;
+		}
+		nav {
+			margin: 0 auto;
+			position: absolute;
+			bottom:3px;
+			width: 100%;
+			li {
+				text-align: center;
+				display: inline-block;
+				border:1px solid black;
+				list-style-type: none;
+				overflow: hidden;	
+				width:32%;
+			}
+			li:hover{
+				color:white;
+				background-color: black;
+				opacity: 0.8;
+			}
+		}
+
+		// @include media("<=tablet"){
+		// 	position: absolute;
+		// 	left:0;
+		// 	right:0;
+		// 	top:0;
+		// 	bottom:0;
+
+		// 	height: 10vh;
+		// 	width: 100%;
+		// 	nav{
+		// 		li{
+		// 			display: inline;
+		// 		}
+		// 	}
+		// }
+	}
+	
+	#myCarousel {	
 		height: 100vh;
+		max-width:100%;
+		max-height:100vh;
+		border: 20px solid white;
+		
+		.carousel-indicators {
+			display:none;
+		}
 		div {
-			height: 100vh;
-			max-width:100%;
-			max-height:100vh;
+			height: 100%;
 			margin:auto;
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
 		}
-		#img1{
+		#img1 {
 			background-image: url('../../images/1.jpg');
 		}
-		#img2{
+		#img2 {
 			background-image: url('../../images/DA1.png'); 
 		}
-		#img3{
+		#img3 {
 			background-image: url('../../images/DSC_0034_copy.JPG'); 
 		}
-		#img4{
+		#img4 {
 			background-image: url('../../images/DSC_0044.jpg'); 
 		}
-		#img5{
+		#img5 {
 			background-image: url('../../images/DSC_0044.jpg'); 
 		}
-		#img6{
+		#img6 {
 			background-image: url('../../images/DSC_0045.jpg'); 
 		}
-		#img7{
+		#img7 {
 			background-image: url('../../images/DSC_0047.jpg'); 
 		}
-		#img8{
+		#img8 {
 			background-image: url('../../images/DSC_0082.JPG'); 
 		}
-		#img9{
+		#img9 {
 			background-image: url('../../images/DSC_0325.JPG'); 
 		}
-		#img10{
+		#img10 {
 			background-image: url('../../images/DSC_0401_copy.JPG'); 
 		}
-		#img11{
+		#img11 {
 			background-image: url('../../images/DSC_0434_copy.JPG'); 
 		}
-		#img12{
+		#img12 {
 			background-image: url('../../images/DSC_0453_copy.JPG'); 
 		}
-		#img13{
+		#img13 {
 			background-image: url('../../images/gala_22.jpg'); 
 		}
-		#img14{
+		#img14 {
 			background-image: url('../../images/gala_23.jpg'); 
 		}
-		#img15{
+		#img15 {
 			background-image: url('../../images/gala_31.jpg'); 
 		}
-		#img16{
+		#img16 {
 			background-image: url('../../images/gala_53.jpg'); 
 		}
-		#img17{
+		#img17 {
 			background-image: url('../../images/PAL_12.jpg'); 
 		}
-		#img18{
+		#img18 {
 			background-image: url('../../images/PAL_13.jpg'); 
 		}
-		#img19{
+		#img19 {
 			background-image: url('../../images/PAL_14.jpg'); 
 		}
 	}

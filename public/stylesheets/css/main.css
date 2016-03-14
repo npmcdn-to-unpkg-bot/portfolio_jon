@@ -1,13 +1,55 @@
 body {
-  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; }
-  body p {
-    text-align: center; }
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  text-align: center; }
+  body span {
+    font-family: 'Fascinate Inline', cursive; }
+  body article {
+    height: 100%;
+    width: 30%;
+    min-width: 20%;
+    overflow: auto;
+    position: absolute;
+    left: 15%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: white;
+    opacity: 0.8;
+    border: 2px solid white; }
+    body article p {
+      margin: 1%;
+      padding: 1%;
+      font-size: larger; }
+    body article #about {
+      padding-top: 10%;
+      display: none; }
+    body article #home {
+      padding-top: 50%; }
+    body article nav {
+      margin: 0 auto;
+      position: absolute;
+      bottom: 3px;
+      width: 100%; }
+      body article nav li {
+        text-align: center;
+        display: inline-block;
+        border: 1px solid black;
+        list-style-type: none;
+        overflow: hidden;
+        width: 32%; }
+      body article nav li:hover {
+        color: white;
+        background-color: black;
+        opacity: 0.8; }
   body #myCarousel {
-    height: 100vh; }
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    border: 20px solid white; }
+    body #myCarousel .carousel-indicators {
+      display: none; }
     body #myCarousel div {
-      height: 100vh;
-      max-width: 100%;
-      max-height: 100vh;
+      height: 100%;
       margin: auto;
       background-size: contain;
       background-repeat: no-repeat;
