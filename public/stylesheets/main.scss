@@ -27,48 +27,71 @@ body {
 			padding:1%;
 			font-size: larger;
 		}
+
+		:last-child{
+			margin-top: 10%;
+		}
+
 		#about {
+			padding:5px;
 			padding-top: 10%;
+			text-align: left;
 			display: none;
 		}
+
 		#home{
 			padding-top:50%;
 		}
+
 		nav {
 			margin: 0 auto;
 			position: absolute;
-			bottom:3px;
+			bottom: 5px;
 			width: 100%;
 			li {
 				text-align: center;
 				display: inline-block;
-				border:1px solid black;
+				// border:1px solid black;
 				list-style-type: none;
-				overflow: hidden;	
+				// overflow: hidden;	
 				width:32%;
 			}
 			li:hover{
+				// @keyframes listPop {
+				//   0%  {
+				//     bottom: 3px;
+				//   }
+				//   100% {  
+				//     bottom: 27px;
+				//   }
+				// }
+				// animation: listPop 2s 0 1 alternate; 
+				transition: bottom .5s linear;
 				color:white;
 				background-color: black;
 				opacity: 0.8;
 			}
+			.hovered{
+				bottom: 27px;
+			}
 		}
 
-		// @include media("<=tablet"){
-		// 	position: absolute;
-		// 	left:0;
-		// 	right:0;
-		// 	top:0;
-		// 	bottom:0;
+		@include media("<=tablet"){
+			// temporary
+			position: absolute;
+			left:0;
+			right:0;
+			top:0;
+			bottom:0;
 
-		// 	height: 10vh;
-		// 	width: 100%;
-		// 	nav{
-		// 		li{
-		// 			display: inline;
-		// 		}
-		// 	}
-		// }
+			height: 30vh;
+			width: 100%;
+			nav{
+				li{
+					display: inline;
+				}
+			}
+		}
 	}
 	
 	#myCarousel {	

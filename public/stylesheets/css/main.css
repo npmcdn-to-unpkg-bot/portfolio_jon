@@ -20,27 +20,43 @@ body {
       margin: 1%;
       padding: 1%;
       font-size: larger; }
+    body article :last-child {
+      margin-top: 10%; }
     body article #about {
+      padding: 5px;
       padding-top: 10%;
+      text-align: left;
       display: none; }
     body article #home {
       padding-top: 50%; }
     body article nav {
       margin: 0 auto;
       position: absolute;
-      bottom: 3px;
+      bottom: 5px;
       width: 100%; }
       body article nav li {
         text-align: center;
         display: inline-block;
-        border: 1px solid black;
         list-style-type: none;
-        overflow: hidden;
         width: 32%; }
       body article nav li:hover {
+        transition: bottom .5s linear;
         color: white;
         background-color: black;
         opacity: 0.8; }
+      body article nav .hovered {
+        bottom: 27px; }
+    @media (max-width: 768px) {
+      body article {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 30vh;
+        width: 100%; }
+        body article nav li {
+          display: inline; } }
   body #myCarousel {
     height: 100vh;
     max-width: 100%;

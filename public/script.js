@@ -13,6 +13,17 @@ $(document).ready(function(){
 	});	
 	//gallery setup
 	$('#ga').on('click', function(){
+
+	});
+
+	//bounce nav li's
+	$('li').on('mouseover', function(){
+		// console.log('mouseover');
+		if($('li').hasClass('hovered')) {
+	        $('li').removeClass('hovered');
+	    }else{
+	        $('li').addClass('hovered');
+	    }
 		
 	});
 });
