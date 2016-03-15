@@ -3,6 +3,17 @@ body {
   text-align: center; }
   body span {
     font-family: 'Fascinate Inline', cursive; }
+  body #profile {
+    display: none;
+    background-image: url("../../images/profile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%; }
   body article {
     height: 100%;
     width: 30%;
@@ -70,8 +81,8 @@ body {
     border: 20px solid white; }
     body header .grid .grid-sizer,
     body header .grid .grid-item {
-      width: 33.333%;
-      height: 400px; }
+      width: 33.3333%;
+      height: 100%; }
     body header .grid .grid-item {
       background-size: contain;
       background-repeat: no-repeat;
@@ -79,40 +90,82 @@ body {
   body header .img1 {
     background-image: url("../../images/1.jpg"); }
   body header .img2 {
-    background-image: url("../../images/DA1.png"); }
+    background-image: url("../../images/2.jpg"); }
   body header .img3 {
-    background-image: url("../../images/DSC_0034_copy.JPG"); }
+    background-image: url("../../images/3.jpg"); }
   body header .img4 {
-    background-image: url("../../images/DSC_0044.jpg"); }
+    background-image: url("../../images/4.jpg"); }
   body header .img5 {
-    background-image: url("../../images/DSC_0044.jpg"); }
+    background-image: url("../../images/5.jpg"); }
   body header .img6 {
-    background-image: url("../../images/DSC_0045.jpg"); }
+    background-image: url("../../images/6.jpg"); }
   body header .img7 {
-    background-image: url("../../images/DSC_0047.jpg"); }
+    background-image: url("../../images/7.jpg"); }
   body header .img8 {
-    background-image: url("../../images/DSC_0082.JPG"); }
+    background-image: url("../../images/8.jpg"); }
   body header .img9 {
-    background-image: url("../../images/DSC_0325.JPG"); }
+    background-image: url("../../images/9.jpg"); }
   body header .img10 {
-    background-image: url("../../images/DSC_0401_copy.JPG"); }
+    background-image: url("../../images/10.jpg"); }
   body header .img11 {
-    background-image: url("../../images/DSC_0434_copy.JPG"); }
+    background-image: url("../../images/11.jpg"); }
   body header .img12 {
-    background-image: url("../../images/DSC_0453_copy.JPG"); }
+    background-image: url("../../images/12.jpg"); }
   body header .img13 {
-    background-image: url("../../images/gala_22.jpg"); }
+    background-image: url("../../images/13.jpg"); }
   body header .img14 {
-    background-image: url("../../images/gala_23.jpg"); }
+    background-image: url("../../images/14.jpg"); }
   body header .img15 {
-    background-image: url("../../images/gala_31.jpg"); }
+    background-image: url("../../images/15.jpg"); }
   body header .img16 {
-    background-image: url("../../images/gala_53.jpg"); }
+    background-image: url("../../images/16.jpg"); }
   body header .img17 {
-    background-image: url("../../images/PAL_12.jpg"); }
+    background-image: url("../../images/17.jpg"); }
   body header .img18 {
-    background-image: url("../../images/PAL_13.jpg"); }
+    background-image: url("../../images/18.jpg"); }
   body header .img19 {
-    background-image: url("../../images/PAL_14.jpg"); }
+    background-image: url("../../images/19.jpg"); }
+  body header .img20 {
+    background-image: url("../../images/20.jpg"); }
+  body header .img21 {
+    background-image: url("../../images/21.jpg"); }
+  body header .img22 {
+    background-image: url("../../images/22.jpg"); }
+  body header .img23 {
+    background-image: url("../../images/23.jpg"); }
+  body header .img24 {
+    background-image: url("../../images/24.jpg"); }
+  body header .img25 {
+    background-image: url("../../images/25.jpg"); }
+  body header .img26 {
+    background-image: url("../../images/26.jpg"); }
+  body header .img27 {
+    background-image: url("../../images/27.jpg"); }
+  body header .img28 {
+    background-image: url("../../images/28.jpg"); }
+  body header .img29 {
+    background-image: url("../../images/29.jpg"); }
+  body header .img30 {
+    background-image: url("../../images/30.jpg"); }
+  body header .img31 {
+    background-image: url("../../images/31.jpg"); }
+  body header .img32 {
+    background-image: url("../../images/32.jpg"); }
+  body header .img33 {
+    background-image: url("../../images/33.jpg"); }
+  body header .img34 {
+    background-image: url("../../images/34.jpg"); }
+  body header .img35 {
+    background-image: url("../../images/35.jpg"); }
+  body header .img36 {
+    background-image: url("../../images/36.jpg"); }
+  body header .img37 {
+    background-image: url("../../images/37.jpg"); }
+  body header .img38 {
+    background-image: url("../../images/38.jpg"); }
+  body header .img39 {
+    background-image: url("../../images/39.jpg"); }
+  body header .img40 {
+    background-image: url("../../images/40.jpg"); }
 
 /*# sourceMappingURL=main.css.map */

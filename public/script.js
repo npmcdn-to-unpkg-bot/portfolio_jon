@@ -1,18 +1,20 @@
 $(document).ready(function(){
+	originalGutter = parseFloat($('article').css('left'));
 	//home setup
 	$('#ho').on('click', function(){
 		if ($('article').hasClass('galleried')) {
 			$('article').removeClass('galleried');
 			$('.grid').fadeOut('fast', function(){
-				$('#home').show();
+				showHome();
 				$('#myCarousel').show();
 			});
 		}
 		else {
-			console.log('home else');
 			$('#about').fadeOut('fast', function(){
-				$('#home').show();
-				$('#myCarousel').show();
+				$('#profile').fadeOut('fast',function(){
+					showHome();
+					$('#myCarousel').show();
+				});
 			});
 		}
 	});
@@ -22,16 +24,14 @@ $(document).ready(function(){
 		if ($('article').hasClass('galleried')) {
 			$('article').removeClass('galleried');
 			$('.grid').fadeOut('fast', function(){
-				$('#about').show();
-				$('#myCarousel').show();
+				showAbout();
 			});
 		}
 		else {
-			console.log('about else');
 			$('#home').fadeOut('fast', function(){
-				$('#about').show();
-				$('#myCarousel').show();
-
+				$('#myCarousel').fadeOut('fast', function(){
+					showAbout();
+				});
 			});
 		}
 	});	
@@ -40,33 +40,64 @@ $(document).ready(function(){
 	$('#ga').on('click', function(){
 		//fadeout Header on home
 		$('#home').fadeOut('fast',function(){
-			//fadeout carousel
-			$('#myCarousel').fadeOut('fast', function(){
-				$('article').addClass('galleried');
-				$('.grid').show();
-				//gallery setup
-				var $grid = $('.grid').imagesLoaded( function() {
-				  // init Masonry after all images have loaded
-				  $grid.masonry({
-				    // options...
-				    itemSelector: '.grid-item',
-			      	percentPosition: true,
-			      	columnWidth: '.grid-sizer'
-				  });
+			//fadeout about
+			$('#about').fadeOut('fast',function(){
+				$('#profile').fadeOut('fast',function(){
+					//fadeout carousel
+					$('#myCarousel').fadeOut('fast', function(){
+						$('article').addClass('galleried');
+						$('.grid').show();
+						//gallery setup
+						initializeMasonry();
+					});
 				});
 			});
 		});
 	});
-
-	//bounce nav li's
-	// $('li').on('mouseover', function(){
-	// 	// console.log('mouseover');
-	// 	if($('li').hasClass('hovered')) {
-	//         $('li').removeClass('hovered');
-	//     }else{
-	//         $('li').addClass('hovered');
-	//     }
-		
-	// });
-	
 });
+
+function showAbout(){
+	$('#about').show();
+	interV = setInterval(slideArticleLeft, 1);
+	$('#profile').fadeIn('fast', function(){});
+}
+
+function showHome(){
+	$('#home').show();
+	interH = setInterval(slideArticleRight, 1);
+}
+
+function slideArticleRight(){
+	console.log('slad')
+	var gutter = parseFloat($('article').css('left'));
+	if (gutter < originalGutter) {
+		gutter++;
+		$('article').css('left', gutter);
+	}
+	else {
+		clearInterval(interH);
+	}
+}
+
+function slideArticleLeft(){
+	var gutter = parseFloat($('article').css('left'));
+	if (gutter > 0) {
+		gutter--;
+		$('article').css('left', gutter);
+	}
+	else {
+		clearInterval(interV);
+	}
+}
+
+function initializeMasonry(){
+	var $grid = $('.grid').imagesLoaded( function() {
+	  // init Masonry after all images have loaded
+	  $grid.masonry({
+	    // options...
+	    itemSelector: '.grid-item',
+      	percentPosition: true,
+      	columnWidth: '.grid-sizer'
+	  });
+	});
+}
