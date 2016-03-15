@@ -19,9 +19,7 @@ body {
 		bottom:0;
 	
 		
-		background: white;
-		opacity: 0.8;
-		border: 2px solid white;
+		background:rgba(255,255,255, 0.6);
 		p {
 			margin: 1%;
 			padding:1%;
@@ -46,7 +44,7 @@ body {
 		nav {
 			margin: 0 auto;
 			position: absolute;
-			bottom: 5px;
+			bottom: 8px;
 			width: 100%;
 			li {
 				text-align: center;
@@ -56,115 +54,154 @@ body {
 				// overflow: hidden;	
 				width:32%;
 			}
+			// @keyframes moveFromBottom {
+			//     from {
+			//         opacity: 0;
+			//         transform: translateY(200%);
+			//     }
+			//     to {
+			//         opacity: 1;
+			//         transform: translateY(0%);
+			//     }
+			// }
+			// @keyframes moveFromTop {
+			//     from {
+			//         // opacity: 0;
+			//         transform: translateY(-200%);
+			//     }
+			//     to {
+			//         // opacity: 1;
+			//         transform: translateY(0%);
+			//     }
+			// }
 			li:hover{
-				// @keyframes listPop {
-				//   0%  {
-				//     bottom: 3px;
-				//   }
-				//   100% {  
-				//     bottom: 27px;
-				//   }
-				// }
-				// animation: listPop 2s 0 1 alternate; 
-				transition: bottom .5s linear;
+				// animation: 500ms ease-in-out 100ms 1 moveFromTop;
 				color:white;
 				background-color: black;
 				opacity: 0.8;
 			}
-			.hovered{
-				bottom: 27px;
-			}
 		}
+		// Needs to be updated
+		// @include media("<=tablet"){
+		// 	// temporary
+		// 	position: absolute;
+		// 	left:0;
+		// 	right:0;
+		// 	top:0;
+		// 	bottom:0;
 
-		@include media("<=tablet"){
-			// temporary
-			position: absolute;
-			left:0;
-			right:0;
-			top:0;
-			bottom:0;
-
-			height: 30vh;
-			width: 100%;
-			nav{
-				li{
-					display: inline;
-				}
-			}
-		}
+		// 	height: 30vh;
+		// 	width: 100%;
+		// 	nav{
+		// 		li{
+		// 			display: inline;
+		// 		}
+		// 	}
+		// }
 	}
-	
-	#myCarousel {	
-		height: 100vh;
-		max-width:100%;
-		max-height:100vh;
-		border: 20px solid white;
-		
-		.carousel-indicators {
-			display:none;
+	.galleried {
+		position: fixed;
+		top: 0;
+		bottom:0;
+		left: 0;
+		right: 0;
+		height:10%;
+		width:100%;
+	}
+	header{	
+		#myCarousel {	
+			height: 100vh;
+			max-width:100%;
+			max-height:100vh;
+			border: 20px solid white;
+			.carousel-indicators {
+				display:none;
+			}
+			div {
+				height: 100%;
+				margin:auto;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
 		}
-		div {
-			height: 100%;
-			margin:auto;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
+		.grid {
+			display: none;
+			height: 100vh;
+			max-width:100%;
+			max-height:100vh;
+			border: 20px solid white;
+
+			.grid-sizer,
+			.grid-item {
+			  width: 33.333%;
+			  height:400px;
+			}
+
+			.grid-item { 
+				// margin:auto;
+				// border: 5px solid white;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				// float:left;
+			}
 		}
-		#img1 {
+		.img1 {
 			background-image: url('../../images/1.jpg');
 		}
-		#img2 {
+		.img2 {
 			background-image: url('../../images/DA1.png'); 
 		}
-		#img3 {
+		.img3 {
 			background-image: url('../../images/DSC_0034_copy.JPG'); 
 		}
-		#img4 {
+		.img4 {
 			background-image: url('../../images/DSC_0044.jpg'); 
 		}
-		#img5 {
+		.img5 {
 			background-image: url('../../images/DSC_0044.jpg'); 
 		}
-		#img6 {
+		.img6 {
 			background-image: url('../../images/DSC_0045.jpg'); 
 		}
-		#img7 {
+		.img7 {
 			background-image: url('../../images/DSC_0047.jpg'); 
 		}
-		#img8 {
+		.img8 {
 			background-image: url('../../images/DSC_0082.JPG'); 
 		}
-		#img9 {
+		.img9 {
 			background-image: url('../../images/DSC_0325.JPG'); 
 		}
-		#img10 {
+		.img10 {
 			background-image: url('../../images/DSC_0401_copy.JPG'); 
 		}
-		#img11 {
+		.img11 {
 			background-image: url('../../images/DSC_0434_copy.JPG'); 
 		}
-		#img12 {
+		.img12 {
 			background-image: url('../../images/DSC_0453_copy.JPG'); 
 		}
-		#img13 {
+		.img13 {
 			background-image: url('../../images/gala_22.jpg'); 
 		}
-		#img14 {
+		.img14 {
 			background-image: url('../../images/gala_23.jpg'); 
 		}
-		#img15 {
+		.img15 {
 			background-image: url('../../images/gala_31.jpg'); 
 		}
-		#img16 {
+		.img16 {
 			background-image: url('../../images/gala_53.jpg'); 
 		}
-		#img17 {
+		.img17 {
 			background-image: url('../../images/PAL_12.jpg'); 
 		}
-		#img18 {
+		.img18 {
 			background-image: url('../../images/PAL_13.jpg'); 
 		}
-		#img19 {
+		.img19 {
 			background-image: url('../../images/PAL_14.jpg'); 
 		}
 	}

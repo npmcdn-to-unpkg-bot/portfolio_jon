@@ -13,9 +13,7 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    background: white;
-    opacity: 0.8;
-    border: 2px solid white; }
+    background: rgba(255, 255, 255, 0.6); }
     body article p {
       margin: 1%;
       padding: 1%;
@@ -32,7 +30,7 @@ body {
     body article nav {
       margin: 0 auto;
       position: absolute;
-      bottom: 5px;
+      bottom: 8px;
       width: 100%; }
       body article nav li {
         text-align: center;
@@ -40,73 +38,81 @@ body {
         list-style-type: none;
         width: 32%; }
       body article nav li:hover {
-        transition: bottom .5s linear;
         color: white;
         background-color: black;
         opacity: 0.8; }
-      body article nav .hovered {
-        bottom: 27px; }
-    @media (max-width: 768px) {
-      body article {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 30vh;
-        width: 100%; }
-        body article nav li {
-          display: inline; } }
-  body #myCarousel {
+  body .galleried {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    width: 100%; }
+  body header #myCarousel {
     height: 100vh;
     max-width: 100%;
     max-height: 100vh;
     border: 20px solid white; }
-    body #myCarousel .carousel-indicators {
+    body header #myCarousel .carousel-indicators {
       display: none; }
-    body #myCarousel div {
+    body header #myCarousel div {
       height: 100%;
       margin: auto;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
-    body #myCarousel #img1 {
-      background-image: url("../../images/1.jpg"); }
-    body #myCarousel #img2 {
-      background-image: url("../../images/DA1.png"); }
-    body #myCarousel #img3 {
-      background-image: url("../../images/DSC_0034_copy.JPG"); }
-    body #myCarousel #img4 {
-      background-image: url("../../images/DSC_0044.jpg"); }
-    body #myCarousel #img5 {
-      background-image: url("../../images/DSC_0044.jpg"); }
-    body #myCarousel #img6 {
-      background-image: url("../../images/DSC_0045.jpg"); }
-    body #myCarousel #img7 {
-      background-image: url("../../images/DSC_0047.jpg"); }
-    body #myCarousel #img8 {
-      background-image: url("../../images/DSC_0082.JPG"); }
-    body #myCarousel #img9 {
-      background-image: url("../../images/DSC_0325.JPG"); }
-    body #myCarousel #img10 {
-      background-image: url("../../images/DSC_0401_copy.JPG"); }
-    body #myCarousel #img11 {
-      background-image: url("../../images/DSC_0434_copy.JPG"); }
-    body #myCarousel #img12 {
-      background-image: url("../../images/DSC_0453_copy.JPG"); }
-    body #myCarousel #img13 {
-      background-image: url("../../images/gala_22.jpg"); }
-    body #myCarousel #img14 {
-      background-image: url("../../images/gala_23.jpg"); }
-    body #myCarousel #img15 {
-      background-image: url("../../images/gala_31.jpg"); }
-    body #myCarousel #img16 {
-      background-image: url("../../images/gala_53.jpg"); }
-    body #myCarousel #img17 {
-      background-image: url("../../images/PAL_12.jpg"); }
-    body #myCarousel #img18 {
-      background-image: url("../../images/PAL_13.jpg"); }
-    body #myCarousel #img19 {
-      background-image: url("../../images/PAL_14.jpg"); }
+  body header .grid {
+    display: none;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    border: 20px solid white; }
+    body header .grid .grid-sizer,
+    body header .grid .grid-item {
+      width: 33.333%;
+      height: 400px; }
+    body header .grid .grid-item {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+  body header .img1 {
+    background-image: url("../../images/1.jpg"); }
+  body header .img2 {
+    background-image: url("../../images/DA1.png"); }
+  body header .img3 {
+    background-image: url("../../images/DSC_0034_copy.JPG"); }
+  body header .img4 {
+    background-image: url("../../images/DSC_0044.jpg"); }
+  body header .img5 {
+    background-image: url("../../images/DSC_0044.jpg"); }
+  body header .img6 {
+    background-image: url("../../images/DSC_0045.jpg"); }
+  body header .img7 {
+    background-image: url("../../images/DSC_0047.jpg"); }
+  body header .img8 {
+    background-image: url("../../images/DSC_0082.JPG"); }
+  body header .img9 {
+    background-image: url("../../images/DSC_0325.JPG"); }
+  body header .img10 {
+    background-image: url("../../images/DSC_0401_copy.JPG"); }
+  body header .img11 {
+    background-image: url("../../images/DSC_0434_copy.JPG"); }
+  body header .img12 {
+    background-image: url("../../images/DSC_0453_copy.JPG"); }
+  body header .img13 {
+    background-image: url("../../images/gala_22.jpg"); }
+  body header .img14 {
+    background-image: url("../../images/gala_23.jpg"); }
+  body header .img15 {
+    background-image: url("../../images/gala_31.jpg"); }
+  body header .img16 {
+    background-image: url("../../images/gala_53.jpg"); }
+  body header .img17 {
+    background-image: url("../../images/PAL_12.jpg"); }
+  body header .img18 {
+    background-image: url("../../images/PAL_13.jpg"); }
+  body header .img19 {
+    background-image: url("../../images/PAL_14.jpg"); }
 
 /*# sourceMappingURL=main.css.map */
