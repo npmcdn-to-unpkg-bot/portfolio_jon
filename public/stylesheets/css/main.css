@@ -1,6 +1,7 @@
 body {
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-  text-align: center; }
+  text-align: center;
+  background: url("../../images/dark_embroidery.png"); }
   body span {
     font-family: 'Fascinate Inline', cursive; }
   body #profile {
@@ -19,6 +20,7 @@ body {
     width: 30%;
     min-width: 20%;
     overflow: auto;
+    z-index: 51;
     position: absolute;
     left: 15%;
     right: 0;
@@ -41,7 +43,7 @@ body {
     body article nav {
       margin: 0 auto;
       position: absolute;
-      bottom: 8px;
+      bottom: 10px;
       width: 100%; }
       body article nav li {
         text-align: center;
@@ -60,112 +62,111 @@ body {
     right: 0;
     height: 10%;
     width: 100%; }
-  body header #myCarousel {
+  body #background #myCarousel {
     height: 100vh;
     max-width: 100%;
     max-height: 100vh;
     border: 20px solid white; }
-    body header #myCarousel .carousel-indicators {
+    body #background #myCarousel .carousel-indicators {
       display: none; }
-    body header #myCarousel div {
+    body #background #myCarousel div {
       height: 100%;
       margin: auto;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
-  body header .grid {
+  body #background .grid {
     display: none;
     height: 100vh;
     max-width: 100%;
-    max-height: 100vh;
-    border: 20px solid white; }
-    body header .grid .grid-sizer,
-    body header .grid .grid-item {
+    max-height: 100%; }
+    body #background .grid .grid-sizer,
+    body #background .grid .grid-item {
       width: 33.3333%;
-      height: 100%; }
-    body header .grid .grid-item {
+      height: 100vh; }
+    body #background .grid .grid-item {
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
-  body header .img1 {
+  body #background .img1 {
     background-image: url("../../images/1.jpg"); }
-  body header .img2 {
+  body #background .img2 {
     background-image: url("../../images/2.jpg"); }
-  body header .img3 {
+  body #background .img3 {
     background-image: url("../../images/3.jpg"); }
-  body header .img4 {
+  body #background .img4 {
     background-image: url("../../images/4.jpg"); }
-  body header .img5 {
+  body #background .img5 {
     background-image: url("../../images/5.jpg"); }
-  body header .img6 {
+  body #background .img6 {
     background-image: url("../../images/6.jpg"); }
-  body header .img7 {
+  body #background .img7 {
     background-image: url("../../images/7.jpg"); }
-  body header .img8 {
+  body #background .img8 {
     background-image: url("../../images/8.jpg"); }
-  body header .img9 {
+  body #background .img9 {
     background-image: url("../../images/9.jpg"); }
-  body header .img10 {
+  body #background .img10 {
     background-image: url("../../images/10.jpg"); }
-  body header .img11 {
+  body #background .img11 {
     background-image: url("../../images/11.jpg"); }
-  body header .img12 {
+  body #background .img12 {
     background-image: url("../../images/12.jpg"); }
-  body header .img13 {
+  body #background .img13 {
     background-image: url("../../images/13.jpg"); }
-  body header .img14 {
+  body #background .img14 {
     background-image: url("../../images/14.jpg"); }
-  body header .img15 {
+  body #background .img15 {
     background-image: url("../../images/15.jpg"); }
-  body header .img16 {
+  body #background .img16 {
     background-image: url("../../images/16.jpg"); }
-  body header .img17 {
+  body #background .img17 {
     background-image: url("../../images/17.jpg"); }
-  body header .img18 {
+  body #background .img18 {
     background-image: url("../../images/18.jpg"); }
-  body header .img19 {
+  body #background .img19 {
     background-image: url("../../images/19.jpg"); }
-  body header .img20 {
+  body #background .img20 {
     background-image: url("../../images/20.jpg"); }
-  body header .img21 {
+  body #background .img21 {
     background-image: url("../../images/21.jpg"); }
-  body header .img22 {
+  body #background .img22 {
     background-image: url("../../images/22.jpg"); }
-  body header .img23 {
+  body #background .img23 {
     background-image: url("../../images/23.jpg"); }
-  body header .img24 {
+  body #background .img24 {
     background-image: url("../../images/24.jpg"); }
-  body header .img25 {
+  body #background .img25 {
     background-image: url("../../images/25.jpg"); }
-  body header .img26 {
+  body #background .img26 {
     background-image: url("../../images/26.jpg"); }
-  body header .img27 {
+  body #background .img27 {
     background-image: url("../../images/27.jpg"); }
-  body header .img28 {
+  body #background .img28 {
     background-image: url("../../images/28.jpg"); }
-  body header .img29 {
+  body #background .img29 {
     background-image: url("../../images/29.jpg"); }
-  body header .img30 {
+  body #background .img30 {
     background-image: url("../../images/30.jpg"); }
-  body header .img31 {
+  body #background .img31 {
     background-image: url("../../images/31.jpg"); }
-  body header .img32 {
+  body #background .img32 {
     background-image: url("../../images/32.jpg"); }
-  body header .img33 {
+  body #background .img33 {
     background-image: url("../../images/33.jpg"); }
-  body header .img34 {
+  body #background .img34 {
     background-image: url("../../images/34.jpg"); }
-  body header .img35 {
+  body #background .img35 {
     background-image: url("../../images/35.jpg"); }
-  body header .img36 {
+  body #background .img36 {
     background-image: url("../../images/36.jpg"); }
-  body header .img37 {
+  body #background .img37 {
     background-image: url("../../images/37.jpg"); }
-  body header .img38 {
+  body #background .img38 {
     background-image: url("../../images/38.jpg"); }
-  body header .img39 {
+  body #background .img39 {
     background-image: url("../../images/39.jpg"); }
-  body header .img40 {
+  body #background .img40 {
     background-image: url("../../images/40.jpg"); }
 
 /*# sourceMappingURL=main.css.map */

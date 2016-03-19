@@ -45,7 +45,9 @@ $(document).ready(function(){
 				$('#profile').fadeOut('fast',function(){
 					//fadeout carousel
 					$('#myCarousel').fadeOut('fast', function(){
+						//Fixes alignent issue when traveling from home to about to home and then gallery.
 						$('article').addClass('galleried');
+						$('article').css('left', '0');
 						$('.grid').show();
 						//gallery setup
 						initializeMasonry();
@@ -53,6 +55,13 @@ $(document).ready(function(){
 				});
 			});
 		});
+	});
+
+	// Gallery overlay functionality:
+	$('.grid-item').on('click', function(){
+		var classes = $(this).attr("class");
+		var imgClass = classes.split(' ')[0];
+		openOverlay(imgClass);
 	});
 });
 
@@ -100,4 +109,16 @@ function initializeMasonry(){
       	columnWidth: '.grid-sizer'
 	  });
 	});
+}
+
+function openOverlay(imgClass) {
+	$('#myCarousel').css({
+		'position':'fixed',
+		'z-index' : '50',
+		'width' : '100%'
+	});
+	//remove active class from previous active carousel item
+	$('div.active').removeClass('active');
+	$('.' + imgClass + '.item').addClass('active');
+	$('#myCarousel').show();
 }

@@ -3,6 +3,7 @@
 body {
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	text-align: center;
+	background: url('../../images/dark_embroidery.png');
 	span {
 		font-family: 'Fascinate Inline', cursive;
 	}
@@ -21,20 +22,21 @@ body {
 	article {
 		height: 100%;
 		width: 30%;
-		min-width:20%;
+		min-width: 20%;
 		overflow: auto;
+		z-index: 51;
 
 		position: absolute;
-		left:15%;
-		right:0;
-		top:0;
-		bottom:0;
+		left: 15%;
+		right: 0;
+		top: 0;
+		bottom: 0;
 	
 		
 		background:rgba(255,255,255, 0.6);
 		p {
 			margin: 1%;
-			padding:1%;
+			padding: 1%;
 			font-size: larger;
 		}
 
@@ -43,20 +45,20 @@ body {
 		}
 
 		#about {
-			padding:5px;
+			padding: 5px;
 			padding-top: 10%;
 			text-align: left;
 			display: none;
 		}
 
 		#home{
-			padding-top:50%;
+			padding-top: 50%;
 		}
 
 		nav {
 			margin: 0 auto;
 			position: absolute;
-			bottom: 8px;
+			bottom: 10px;
 			width: 100%;
 			li {
 				text-align: center;
@@ -73,6 +75,7 @@ body {
 		}
 	}
 	.galleried {
+		//for nav
 		position: fixed;
 		top: 0;
 		bottom:0;
@@ -82,7 +85,7 @@ body {
 		width:100%;
 	}
 
-	header{	
+	#background{	
 		#myCarousel {	
 			height: 100vh;
 			max-width:100%;
@@ -103,13 +106,12 @@ body {
 			display: none;
 			height: 100vh;
 			max-width:100%;
-			max-height:100vh;
-			border: 20px solid white;
+			max-height:100%;
 
 			.grid-sizer,
 			.grid-item {
 			  width: 33.3333%;
-			  height:100%;
+			  height:100vh;
 			}
 
 			.grid-item { 
@@ -118,6 +120,8 @@ body {
 				background-position: center;
 			}
 		}
+		//Added as background images so that
+		//users can't right click and download
 		.img1 {
 			background-image: url('../../images/1.jpg');
 		}
