@@ -47,6 +47,7 @@ $(document).ready(function(){
 					$('#myCarousel').fadeOut('fast', function(){
 						//Fixes alignent issue when traveling from home to about to home and then gallery.
 						$('article').addClass('galleried');
+						$('.veil').hide();
 						$('article').css('left', '0');
 						$('.grid').show();
 						//gallery setup
@@ -120,5 +121,6 @@ function openOverlay(imgClass) {
 	//remove active class from previous active carousel item
 	$('div.active').removeClass('active');
 	$('.' + imgClass + '.item').addClass('active');
+	$('.veil').show();
 	$('#myCarousel').show();
 }

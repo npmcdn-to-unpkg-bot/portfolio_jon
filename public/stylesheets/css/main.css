@@ -4,6 +4,8 @@ body {
   background: url("../../images/dark_embroidery.png"); }
   body span {
     font-family: 'Fascinate Inline', cursive; }
+  body iframe {
+    display: none; }
   body #profile {
     display: none;
     background-image: url("../../images/profile.jpg");
@@ -45,15 +47,20 @@ body {
       position: absolute;
       bottom: 10px;
       width: 100%; }
+      body article nav ul {
+        padding-left: 0; }
       body article nav li {
         text-align: center;
         display: inline-block;
         list-style-type: none;
-        width: 32%; }
+        width: 32%;
+        font-size: larger; }
       body article nav li:hover {
         color: white;
         background-color: black;
-        opacity: 0.8; }
+        opacity: 0.8;
+        cursor: pointer;
+        cursor: hand; }
   body .galleried {
     position: fixed;
     top: 0;
@@ -67,9 +74,17 @@ body {
     max-width: 100%;
     max-height: 100vh;
     border: 20px solid white; }
+    body #background #myCarousel .veil {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0.6);
+      display: none; }
     body #background #myCarousel .carousel-indicators {
       display: none; }
-    body #background #myCarousel div {
+    body #background #myCarousel .carousel-inner, body #background #myCarousel .item {
       height: 100%;
       margin: auto;
       background-size: contain;
